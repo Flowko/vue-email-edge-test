@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@vue-email/nuxt':
-    specifier: 0.8.3
-    version: 0.8.3(typescript@5.3.3)(vue@3.3.11)
+    specifier: npm:@vue-email/nuxt-edge@0.8.4-28383411.986806e
+    version: /@vue-email/nuxt-edge@0.8.4-28383411.986806e(typescript@5.3.3)(vue@3.3.11)
 
 devDependencies:
   nuxt:
@@ -1314,6 +1314,7 @@ packages:
     dependencies:
       is-glob: 4.0.3
       micromatch: 4.0.5
+      napi-wasm: 1.1.0
     dev: true
     bundledDependencies:
       - napi-wasm
@@ -1785,8 +1786,8 @@ packages:
       vue: 3.3.11(typescript@5.3.3)
     dev: true
 
-  /@vue-email/compiler@0.8.1(typescript@5.3.3)(vue@3.3.11):
-    resolution: {integrity: sha512-R22S/KgxTKukX0oeCP/KUactU0yXNZj/SpumzqBXHG2qcNOHExafoKqAPOW9G6nfxjZTRjAdpQ8ChYmwUo6ieA==}
+  /@vue-email/compiler-edge@0.8.2-28383408.6163ed2(typescript@5.3.3)(vue@3.3.11):
+    resolution: {integrity: sha512-0zVv4gZGKS5BafNZBenFo+gr+8vo8gJWOrGqyk30fTW9Z1hx+18NmCb8z729EaZyCskx5dpYDpSekDBj3/0Y2Q==}
     peerDependencies:
       vue: ^3.3.8
     dependencies:
@@ -1794,7 +1795,7 @@ packages:
       kolorist: 1.8.0
       scule: 1.1.1
       vue: 3.3.11(typescript@5.3.3)
-      vue-email: 0.8.1(vue@3.3.11)
+      vue-email: 0.8.2(vue@3.3.11)
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -1803,14 +1804,14 @@ packages:
       - utf-8-validate
     dev: false
 
-  /@vue-email/nuxt@0.8.3(typescript@5.3.3)(vue@3.3.11):
-    resolution: {integrity: sha512-tgTJqPx7WrWZ4xZpGQLNJYpSM9KfaZZDtqSfMx0FoMydBthgN0XurtxSRI6Te4hPKvSSqZY/TMkimIFovjiAWA==}
+  /@vue-email/nuxt-edge@0.8.4-28383411.986806e(typescript@5.3.3)(vue@3.3.11):
+    resolution: {integrity: sha512-eS5BuWfTey35o7OTcaL1EOWUw/1Jzjd1P+TZnS+VKSpt2t5JsECk6rE0clKZPfyL+2uf9+TxqcTDkadbk7aQgw==}
     dependencies:
       '@nuxt/kit': 3.8.2
-      '@vue-email/compiler': 0.8.1(typescript@5.3.3)(vue@3.3.11)
+      '@vue-email/compiler': /@vue-email/compiler-edge@0.8.2-28383408.6163ed2(typescript@5.3.3)(vue@3.3.11)
       defu: 6.1.3
       sirv: 2.0.3
-      vue-email: 0.8.1(vue@3.3.11)
+      vue-email: 0.8.2(vue@3.3.11)
     transitivePeerDependencies:
       - bufferutil
       - canvas
@@ -4234,6 +4235,10 @@ packages:
     hasBin: true
     dev: true
 
+  /napi-wasm@1.1.0:
+    resolution: {integrity: sha512-lHwIAJbmLSjF9VDRm9GoVOy9AGp3aIvkjv+Kvz9h16QR3uSVYH78PNQUnT2U4X53mhlnV2M7wrhibQ3GHicDmg==}
+    dev: true
+
   /negotiator@0.6.3:
     resolution: {integrity: sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==}
     engines: {node: '>= 0.6'}
@@ -5415,6 +5420,7 @@ packages:
 
   /safer-buffer@2.1.2:
     resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+    requiresBuild: true
 
   /saxes@6.0.0:
     resolution: {integrity: sha512-xAg7SOnEhrm5zI3puOOKyy1OMcMlIJZYNJY7xLBwSze0UjhPLnWfj2GF2EpT0jmzaJKIWKHLsaSSajf35bcYnA==}
@@ -6374,8 +6380,8 @@ packages:
     resolution: {integrity: sha512-RutnB7X8c5hjq39NceArgXg28WZtZpGc3+J16ljMiYnFhKvd8hITxSWQSQ5bvldxMDU6gG5mkxl1MTQLXckVSQ==}
     dev: true
 
-  /vue-email@0.8.1(vue@3.3.11):
-    resolution: {integrity: sha512-Zen3dxiremgqLHgEmnSlZlypSUls7RW6raRG0ug7TBKCTPKGR+EdDmExkoTl4W9BdqyrPmskN0wFQRMI5XFvtg==}
+  /vue-email@0.8.2(vue@3.3.11):
+    resolution: {integrity: sha512-9F4F069Pz30UXDMbWC0uCmJUFsBnqtdkoGq21sfAqsxRWABNzY0yvZwIsHRcKMwgOr1I4g4KhLL7C8vGoIxwzA==}
     peerDependencies:
       vue: ^3.3.8
     dependencies:
