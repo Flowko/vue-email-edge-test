@@ -1,10 +1,18 @@
-import { useCompiler } from "#vue-email"
+import { useCompiler } from '#vue-email';
 
-export default defineEventHandler(async (event) => {
-  return await useCompiler("Template.vue", {
+export default defineEventHandler(async () => {
+  const template = await useCompiler('test.vue', {
     props: {
-      heading: "Hello World",
-      previewText: "This is a preview text",
-    }
-  })
-})
+      username: 'John Doe',
+    },
+  });
+
+  if (!template) {
+    throw createError({
+      statusCode: 404,
+      statusMessage: 'Not Found',
+    });
+  }
+
+  return template.html;
+});
