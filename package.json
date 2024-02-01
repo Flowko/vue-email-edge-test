@@ -10,11 +10,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt": "^3.9.3",
+    "nuxt": "^3.10.0",
     "vue": "^3.4.15",
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "@vue-email/nuxt": "^0.8.10"
+    "@vue-email/nuxt": "npm:@vue-email/nuxt-edge@0.8.12-28446422.cc00f7e"
   }
 }
